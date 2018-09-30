@@ -62,7 +62,7 @@ int main() {
 
     // Dibujamos cada vértice en el render
     for (int i = 0; i<=1448; i++) {
-        v[i] = mueveVertice(v[i], 2, 2, 3);
+        v[i] = mueveVertice(v[i], 0, 0, 3);
         point2d p = perspectiveDivision(v[i]);
         SDL_RenderDrawPoint(renderer, p.x, p.y);
     }
